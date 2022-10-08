@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2021 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="app_name">Afirmações</string>
+    <string name="app_language">Idioma do app</string>
+
+    <string name="affirmation1">Eu sou forte.</string>
+    <string name="affirmation2">Eu acredito em mim.</string>
+    <string name="affirmation3">Cada dia é uma nova oportunidade de crescer e ser uma versão melhor de mim mesma.</string>
+    <string name="affirmation4">Cada desafio na minha vida é uma oportunidade para aprender.</string>
+    <string name="affirmation5">Tenho muito a agradecer.</string>
+    <string name="affirmation6">Coisas boas estão sempre chegando na minha vida.</string>
+    <string name="affirmation7">Novas oportunidades me esperam a cada passo.</string>
+    <string name="affirmation8">Eu tenho a coragem de seguir meu coração.</string>
+    <string name="affirmation9">As coisas vão se desenrolar exatamente na hora certa.</string>
+    <string name="affirmation10">Estarei presente em todos os momentos que este dia traz.</string>
+</resources>

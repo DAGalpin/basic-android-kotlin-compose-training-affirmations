@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">확인</string>
+    <string name="affirmation1">나는 강하다.</string>
+    <string name="affirmation2">나는 나 자신을 믿는다.</string>
+    <string name="affirmation3">매일은 성장하고 나 자신의 더 나은 버전을 위한 새로운 기회입니다.</string>
+    <string name="affirmation4">내 인생의 모든 도전은 배울 수 있는 기회입니다.</string>
+    <string name="affirmation5">감사할 일이 너무 많습니다.</string>
+    <string name="affirmation6">좋은 일들은 항상 내 삶에 찾아옵니다.</string>
+    <string name="affirmation7">매번 새로운 기회가 저를 기다리고 있습니다.</string>
+    <string name="affirmation8">나는 내 마음을 따를 용기가 있습니다.</string>
+    <string name="affirmation9">정확한 시간에 상황이 전개될 것입니다.</string>
+    <string name="affirmation10">나는 오늘이 가져오는 모든 순간에 존재할 것입니다.</string>
+    <string name="app_language">앱 언어</string>
+</resources>
