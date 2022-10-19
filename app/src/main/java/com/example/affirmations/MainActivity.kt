@@ -61,7 +61,13 @@ import java.util.Locale
 
 class MainActivity : AppCompatActivity() {
     val model: AffirmationsViewModel by viewModels()
-    // TODO: (3) Register for pick media result rppr - ppvm
+    var pickMedia = registerForActivityResult(PickMultipleVisualMedia(10)) { uriList ->
+        uriList?.let {
+            for (index in 0 until minOf(it.size,model.affirmations.size)) {
+                model.setAffirmationURI(index,uriList[index].toString())
+            }
+        }
+    }
     lateinit var applicationLocale: Locale
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -69,17 +75,11 @@ class MainActivity : AppCompatActivity() {
         setContent {
             AffirmationApp(model,
                 onLanguageSelected = {
-                    // TODO: (1) Use AppCompat with acds
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-                        val appLocale = LocaleList.forLanguageTags(it.localeCode)
-                        val localeManager: LocaleManager? = getSystemService()
-                        localeManager?.let {
-                            it.applicationLocales = appLocale
-                        }
-                    }
+                    val appLocale = LocaleListCompat.forLanguageTags(it.localeCode)
+                    AppCompatDelegate.setApplicationLocales(appLocale)
             },
                 onClicked = {
-                    // TODO: (4) Launch PhotoPicker picking multiple visual media ippa - pvmr
+                    pickMedia.launch(PickVisualMediaRequest(PickVisualMedia.ImageOnly))
                 })
         }
     }
